@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Reindirizzamento...</title>
+
+  <script>
+    // Lista dei tuoi Google Sites
+    const urls = [
+      "https://sites.google.com/view/thespaceparty?usp=sharing",
+      "https://sites.google.com/view/thespaceparty-frase2?usp=sharing",
+      "https://sites.google.com/view/thespaceparty-frase3?usp=sharing",
+      "https://sites.google.com/view/thespaceparty-frase4?usp=sharing",
+      "https://sites.google.com/view/thespaceparty-frase5?usp=sharing",
+      // aggiungi quanti ne vuoi
+    ];
+
+    // Scelta casuale
+    const randomUrl = urls[Math.floor(Math.random() * urls.length)];
+
+    // Redirect istantaneo
+    window.location.href = randomUrl;
+  </script>
+
+</head>
+<body>
+  <p>Reindirizzamento in corso...</p>
+  <p>Se non succede nulla, <a id="link" href="#">clicca qui</a>.</p>
+
+  <script>
+    document.getElementById("link").href = randomUrl;
+  </script>
+</body>
+</html>
